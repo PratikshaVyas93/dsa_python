@@ -82,3 +82,35 @@ print("reverse list: ",rev_list)
 for j in range(len(list_arr)-1,-1,-2):
     r_l.append(list_arr[j])
 print("reverse list: ",r_l)
+
+
+list_a = [1,2,4,3,5,6,10,12]
+larget_el = list_a[0]
+# for i in list_a:
+#     if i > larget_el:
+#         larget_el = i
+# print("largest element in the list: ",larget_el)
+# second_larget = list_a[0]
+# for j in list_a:
+#     if j > second_larget and j < larget_el:
+#         second_larget = j
+# print("second largest element in the list: ",second_larget)
+
+
+# find third largest element in the list
+largest = list_a[0]
+second_largest = list_a[0]
+third_largest = list_a[0]
+for i in list_a:
+    if i > largest:
+        third_largest = second_largest
+        second_largest = largest
+        largest = i
+    elif i > second_largest and i != largest:
+        third_largest = second_largest
+        second_largest = i
+    elif i > third_largest and i != second_largest and i != largest:
+        third_largest = i
+print("largest element in the list: ",largest)
+print("second largest element in the list: ",second_largest)
+print("third largest element in the list: ",third_largest)  
