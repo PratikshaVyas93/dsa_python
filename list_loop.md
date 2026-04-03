@@ -40,3 +40,9 @@ Step: -1. This makes the loop count downwards (decrement by 1 each time), instea
 ☐ Found max/min  
 ☐ Counted even/odd  
 ☐ Reversed list  
+
+From today, start noticing patterns:
+
+Loop over list → Traversal pattern
+Find max/min → Comparison pattern
+Count something → Frequency pattern
